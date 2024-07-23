@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    background-color: antiquewhite;
+    max-width: fit-content;
+    margin-inline: auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container .input-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-block .addtext {
+    border-radius: 10px;
+    border: chocolate;
+    padding: 5px 21px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-block .btn-add {
+    border: none;
+    height: fit-content;
+    background: transparent;
+    cursor: pointer;
+}
+
+.input-block .input-icon {
+    width: 20px;
+    height: 25px;
+}
+
+.todo-list li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 3px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-list li::before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-image: url("https://www.freeiconspng.com/uploads/circle-icon-0.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+li button {
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png");
+    background-size: cover;
+    background-position: center;
+    top: 16px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: rgba(222, 222, 222, 0.952);
+    transition: .2s;
+}
+
+.todo-list li.checked {
+    color: rgb(111, 200, 139);
+    text-decoration: line-through;
+}
+
+.todo-list li.checked::before {
+    background-image: url("https://e7.pngegg.com/pngimages/345/390/png-clipart-check-mark-computer-icons-circle-circle-angle-logo.png");
+}
